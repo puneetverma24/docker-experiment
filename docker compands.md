@@ -1,0 +1,38 @@
+```Docker commands```
+- `docker run`: Run a container from an image
+- `docker-compose`: Run multiple containers as a service
+- `docker network`: Manage Docker networks
+- `docker inspect`: Get detailed information about a container or image
+- `docker ps`: List running containers
+- `docker images`: List all available images on the system
+- `docker stop`: Stop a running container
+- `docker rm`: Remove a stopped container
+- `docker rmi`: Remove an image
+- `docker build`: Build a new image from a Dockerfile
+- `docker exec`: Run a command in a running container
+- `docker logs`: Display the logs of a container
+- `docker pull`: Pull an image from a registry
+- `docker push`: Push an image to a registry
+- `docker volume`: Manage Docker volumes
+- `docker-machine`: Manage Docker machines (hosts)
+- `docker stats`: Display real-time resource usage statistics for one or more containers
+- `docker attach`: Attach to a running container
+- `docker commit`: Create a new image from a container's changes
+- `docker cp`: Copy files/folders between a container and the local filesystem
+- `docker diff`: Inspect changes to files or directories on a container's filesystem
+- `docker events`: Get real-time events from the Docker server
+- `docker export`: Export a container's filesystem as a tar archive
+- `docker history`: Show the history of an image
+- `docker info`: Display system-wide information about Docker
+- `docker login`: Log in to a Docker registry
+- `docker logout`: Log out from a Docker registry
+- `docker pause`: Pause all processes within a container
+- `docker port`: List the public-facing ports of a container
+- `docker restart`: Restart a running container
+- `docker save`: Save an image to a tar archive
+- `docker start`: Start a stopped container
+- `docker stats`: Display real-time resource usage statistics for one or more containers
+- `docker tag`: Create a tag (alias) for an image
+- `docker top`: Display the running processes of a container
+- `docker unpause`: Unpause all processes within a container
+- `docker version`: Display version information for Docker
