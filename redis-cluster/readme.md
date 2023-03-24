@@ -16,8 +16,9 @@
 **Step 4: Create cluster** 
 
 - In the container, you can run
-- use internal conatiner ports
+- use internal container ports
     
+
     
     redis-cli --cluster create <ip of redisnode-1>:6379 <ip of redisnode-2>:6379 <ip of redisnode-3>:6379 --cluster-replicas 0
 
@@ -26,6 +27,6 @@
     
     docker-compose exec redis-1 redis-cli --cluster create 172.28.0.2:6379 172.28.0.3:6379 172.28.0.4:6379 --cluster-replicas 0
 
-**Step 6: Check cluster status**
+**Step 6: Check the cluster status**
 
     redis-cli -h <ip of any node> -p <port> CLUSTER NODES
