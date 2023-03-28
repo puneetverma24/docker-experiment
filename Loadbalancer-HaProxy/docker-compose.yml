@@ -1,0 +1,35 @@
+version: '3'
+services:
+  haproxy:
+    image: haproxytech/haproxy-alpine:2.4
+    container_name: haproxy
+    volumes:
+      - ./haproxy.cfg:/usr/local/etc/haproxy/haproxy.cfg:rw
+    ports:
+      - "80:80"
+      - "8404:8404"
+    networks:
+      - ha-network
+
+  webserver1:
+    image: jmalloc/echo-server:latest
+    container_name: webserver1
+    networks:
+      - ha-network
+
+  webserver2:
+    image: jmalloc/echo-server:latest
+    container_name: webserver2
+    networks:
+      - ha-network
+
+  webserver3:
+    image: jmalloc/echo-server:latest
+    container_name: webserver3
+    networks:
+      - ha-network
+
+
+networks:
+  ha-network:
+    driver: bridge
